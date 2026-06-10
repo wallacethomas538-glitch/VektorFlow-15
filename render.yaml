@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: vektorflow-15
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn vektorflow_15:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: 8000
+      - key: VEKTORFLOW_API_KEY
+        value: your_generated_api_key_here
