@@ -1,57 +1,74 @@
-# 🚀 VEKTORFLOW-15
+# VEKTORFLOW-15
 
-**Autonomous AI E-Commerce Operating System — 15 Specialized Agents**
+**Autonomous AI e-commerce operating system — 15 specialized agents, one launch decision.**
 
-> ⚡ **Live Demo:** Available upon request  
-> 🔐 **Source Code:** Private — available to investors & partners  
-> 🛡️ **Protected:** Apache 2.0 | Trademark Pending | API Key Secured  
+Cerebrum Command is a working command center. Brief a product and the table runs scout, supply, store, creative, media, support, price, compliance, voice, virality, competitor intel, bundles, positioning, and a 30-day P&L — then Cerebrum issues **LAUNCH**, **ITERATE**, or **KILL**.
 
-## 🧠 THE 15-AGENT AI TEAM
+Same product, same numbers. The read is deterministic.
 
-| # | Agent | Function |
-|---|-------|----------|
-| 1 | 🦅 Hawk | Product Scouting & Description Generation |
-| 2 | 🐉 Smaug | Supplier Discovery & Negotiation |
-| 3 | 🏗️ Architect | Store Blueprint Generator (Any Platform) |
-| 4 | 🎨 DaVinci | Ad Creative Factory |
-| 5 | 💰 Rook | Media Buying with Auto Scale/Kill |
-| 6 | 🛡️ Aegis | Customer Support & Review Analysis |
-| 7 | 💹 Arbiter | Real-Time Dynamic Pricing |
-| 8 | 🔒 Sentinel | GDPR/CCPA Compliance Generator |
-| 9 | 🎤 Echo | AI Voice Synthesis for Video Ads |
-| 10 | 🧠 Cerebrum | Central Command Center |
-| 11 | 🔥 ViralDet | Social Media Viral Spike Detector |
-| 12 | 🕵️ Shadow | Competitor Store Intelligence |
-| 13 | 🎁 Bundler | High-Margin Product Bundle Builder |
-| 14 | 🔄 Pivot | Sentiment-Driven Product Positioning |
-| 15 | 🔮 Oracle | 30-Day Profit Predictor |
+## The table
 
-## 🌐 PLATFORM AGNOSTIC
+| # | Agent | Desk |
+|---|-------|------|
+| 01 | Hawk | Product scout, SEO copy, opportunity score |
+| 02 | Smaug | Supplier match, landed cost, negotiation script |
+| 03 | Architect | Brand, palette, store blueprint, FAQ |
+| 04 | DaVinci | Hooks, 18s script, headlines, UGC prompt |
+| 05 | Rook | Scale / maintain / kill on ROAS |
+| 06 | Aegis | Support intents, review tone, abandoned-cart drip |
+| 07 | Arbiter | Floor, charm price, competitor tape |
+| 08 | Sentinel | GDPR/CCPA score, policy excerpt, checklist |
+| 09 | Echo | Voice casting and runtime for ad reads |
+| 10 | Cerebrum | Assembles the table. One verdict. |
+| 11 | ViralDet | Platform velocity and launch window |
+| 12 | Shadow | Competitor hooks, weak spot, counter-moves |
+| 13 | Bundler | Starter / Kit / Deluxe with AOV lift |
+| 14 | Pivot | One-star reviews turned into ad angles |
+| 15 | Oracle | Conservative / base / optimistic 30-day P&L |
 
-Works with ANY e-commerce dropshipping platform:
+Works as a desk for any storefront: Shopify, WooCommerce, BigCommerce, Magento, Wix, Squarespace, or a custom API.
 
-Shopify | WooCommerce | BigCommerce | Magento | Wix | Squarespace | Custom API
+## Quick start
 
-## 🚀 QUICK START
+```bash
+python -m pip install -r requirements.txt
+python -m vektorflow
+```
 
-pip install -r requirements.txt
-python vektorflow_15.py
+Open [http://localhost:8000](http://localhost:8000). Demo mode is on by default.
 
-## 📡 API DOCUMENTATION
+```bash
+# lock mutating endpoints in production
+export VEKTORFLOW_DEMO=false
+export VEKTORFLOW_API_KEY=$(python -c "import secrets; print(secrets.token_urlsafe(32))")
+```
 
-http://localhost:8000/docs
+Interactive API: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-## 🛡️ SECURITY
+```bash
+pytest
+```
 
-- API Key authentication on all endpoints
-- CORS restricted to authorized domains
-- Apache 2.0 License with patent protection
-- Trademark pending
+```bash
+docker build -t vektorflow-15 .
+docker run -p 8000:8000 vektorflow-15
+```
 
-## 💼 FOR INVESTORS & PARTNERS
+## How a mission works
 
-VEKTORFLOW-15 represents a new category: **AI-Native E-Commerce Operating Systems**. Full source code available under NDA.
+1. Open **Launch** and brief the product (name, category, price, cost, daily ad budget).
+2. Cerebrum wakes the table in order. Each agent files a one-line finding.
+3. The **dossier** is the full read — verdict, conviction, and every desk report.
+4. **Live Ops** is today’s floor: Rook’s book, Arbiter’s tape, Aegis’s queue, ViralDet’s heat.
 
-**Contact:** [your-email]
+Individual desks are on the left rail if you only need one agent.
 
-© 2026 VEKTORFLOW. All rights reserved. Patent pending.
+## Security
+
+- `VEKTORFLOW_DEMO=true` (default) keeps the command center usable without a key.
+- With demo off, mutating `/api/v1/*` routes require `X-API-Key`.
+- `/`, `/health`, `/docs`, and `/static` stay public so the board can load.
+
+## License
+
+Apache 2.0. Copyright 2026 Wallace J Thomas III — VEKTORFLOW.
